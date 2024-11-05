@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Foldable Menu -->
+    <div id="menu" class="foldable-menu">
+        <button id="menu-btn">☰</button>
+        <div id="menu-options" class="menu-options" style="display: none;">
+            <button id="home-btn" class="menu-button">Home</button>
+            <button id="view-expenses-btn" class="menu-button">Expenses</button>
+        </div>
+    </div>
+
+    <!-- Budget List Page -->
+    <div id="budget-list-page">
+        <h1>Budgets</h1>
+        <div id="budget-list"></div>
+        <button id="create-budget-btn" class="circle-button">+</button>
+    </div>
+
+    <!-- Create Budget Page -->
+    <div id="budget-form" style="display: none;">
+        <input type="text" id="budget-name" placeholder="Budget Name">
+        <input type="text" id="salary-amount" placeholder="$ Salary Amount">
+        <div class="create-budget-container">
+            <button id="submit-budget" class="create-budget-btn">Create Budget</button>
+        </div>
+    </div>
+
+    <!-- Individual Budget Page -->
+    <div id="main-page" style="display: none;">
+        <h1 id="current-salary">$0</h1>
+        <button id="add-expense-btn" class="circle-button">-</button>
+    </div>
+
+    <!-- Expense Page -->
+    <div id="expense-page" style="display: none;">
+        <h1 id="display-salary">$0</h1>
+        <input type="text" id="expense-name" placeholder="Expense">
+        <input type="text" id="expense-amount" placeholder="$ Amount">
+        <button id="submit-expense">Add Expense</button>
+        <div id="expense-list" style="display: none;"></div>
+    </div>
+
+    <script src="budget.js"></script>
+</body>
+</html>

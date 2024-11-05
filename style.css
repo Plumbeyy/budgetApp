@@ -1,0 +1,165 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    flex-direction: column;
+}
+
+/* Menu Styling */
+#menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#menu-btn {
+    font-size: 24px;
+    color: #fff;
+    background: none;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.menu-options {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+}
+
+.menu-button {
+    font-size: 16px;
+    color: #fff;
+    background: #000;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.menu-button:hover {
+    background: #222;
+}
+
+/* Budget List Styling */
+#budget-list-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#budget-list-page h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#budget-list p {
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+#budget-list p:hover {
+    text-decoration: underline;
+}
+
+/* Centered Form Layout for Creating Budget */
+#budget-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Centered Layout for Budget Page with Amount and Minus Button */
+#main-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Centered Layout for Expense Page with Salary, Expense Name, and Amount */
+#expense-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Input Boxes Styling */
+#budget-form input, #expense-page input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 18px;
+    color: #fff;
+    background-color: #000;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Circle Button Styling for "+" and "-" */
+.circle-button {
+    font-size: 48px;
+    color: #fff;
+    background: none;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-top: 20px;
+}
+
+.circle-button:hover {
+    transform: scale(1.1);
+}
+
+/* Rounded Container and Button for "Create Budget" */
+.create-budget-container {
+    margin-top: 20px;
+    background-color: #000;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.create-budget-btn {
+    font-size: 24px;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.create-budget-btn:hover {
+    text-decoration: underline;
+}
+
+/* Large Salary Display */
+h1 {
+    font-size: 36px;
+}
